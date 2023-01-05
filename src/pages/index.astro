@@ -1,14 +1,15 @@
 ---
 import Layout from "../components/layout/Layout.astro";
 import ButtonSwitchTheme from "../components/user-interface/ButtonSwitchTheme.astro";
-import ProfileInformation from "../components/user-interface/ProfileInformation.astro";
+import Profile from "../components/layout/Home/Profile.astro";
+import Portfolio from "../components/layout/Home/Portfolio.astro";
 
 const title: string = 'Inicio';
 const description: string = 'Texto de borrador';
 ---
+
 <Layout title={title} description={description}>
-
     <ButtonSwitchTheme pageTitle={title}/>
-    <ProfileInformation/>
-
+    <Profile/>
+    <Portfolio/>
 </Layout>

@@ -1,0 +1,68 @@
+---
+import '../../../../styles.css';
+---
+
+<div 
+    class="flex flex-wrap justify-center my-3
+        md:my-8 md:items-center"
+>
+
+    <!-- Image -->
+    <div 
+        class="self-center mb-10 p-1 border-4 rounded-full border-emerald-400 
+            md:p-2 md:mb-auto"
+    >
+        <img 
+            class="w-28 rounded-full
+                md:w-48" 
+            src="../public/profile-photo.jpg" 
+            alt="Profile Photo"
+        >
+    </div>
+
+    <!-- Text -->
+    <div 
+        class="grid gap-3 basis-full text-center
+        md:basis-auto md:ml-10 md:text-left"
+    >
+        <h1 
+            class="text-primary font-medium text-neutral-700"
+        >
+            Kevin Andres G.
+        </h1>
+
+        <p 
+            class="text-base font-medium text-neutral-700
+                text-secondary"
+        >
+            Front-end Developer
+        </p>
+
+        <div 
+            class="social-nets-container grid place-content-center gap-6 pt-2
+                md:pt-0 md:place-content-start"
+        >
+            <a href="https://github.com/kevinantech" target="_blank">
+                <img class="align-top" src="../public/github.svg" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/kevinandresgom/" target="_blank">
+                <img class="align-top" src="../public/linkedin.svg" alt="Linkedin">
+            </a>
+            <a href="https://www.tiktok.com/@kevinantech" target="_blank">
+                <img class="align-top" src="../public/tiktok.svg" alt="TikTok">
+            </a>
+        </div>
+    </div>
+</div>
+
+<style>
+    .social-nets-container {
+        grid-template-columns: repeat(auto-fit, 24px);
+    }
+
+    @media screen and (min-width: 768px) {
+        .social-nets-container {
+            grid-template-columns: repeat(auto-fit, 36px);
+        }
+    }
+</style>

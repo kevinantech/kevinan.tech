@@ -1,0 +1,23 @@
+---
+import '../../../../styles.css';
+interface Props {
+    quantity: number | string;
+    information: string;
+}
+const { quantity, information } = Astro.props;
+---
+
+<div class="text-center max-w-min">
+    <p 
+        class="text-lg font-medium text-neutral-700
+        md:text-2xl"
+    >
+        {quantity}
+    </p>
+    <p 
+        class="text-base font-medium text-neutral-700
+        text-secondary"
+    >
+        {information}
+    </p>
+</div>

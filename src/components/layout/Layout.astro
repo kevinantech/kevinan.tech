@@ -17,7 +17,12 @@ const faviconPath: string = title === 'Inicio' ? "../public/favicon.svg" : "../.
     <link rel="shortcut icon" href={faviconPath} type="image/x-icon">
     <title>Kevinantech | {title}</title>
 </head>
-<body class="bg-gray-200 overflow-hidden">
-    <slot/>
+<body class="bg-gray-200">
+    <div 
+        class="w-11/12 mx-auto overflow-x-hidden
+            md: max-w-3xl"
+    >
+        <slot/>
+    </div>
 </body>
 </html>

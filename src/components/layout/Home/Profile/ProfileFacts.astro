@@ -1,0 +1,28 @@
+---
+import ProfileFact from "./ProfileFact.astro";
+const facts = [
+    {
+        quantity: 1,
+        information: 'Año de experiencia'
+    },
+    {
+        quantity: '6+',
+        information: 'Proyectos completados'
+    },
+    {
+        quantity: '2+',
+        information: 'Clientes satisfechos'
+    }
+]
+---
+
+<div 
+    class="flex justify-around max-w-lg mx-auto py-10
+        md:justify-between md:py-8"
+>
+    {
+        facts.map( fact => 
+            <ProfileFact quantity={fact.quantity} information={fact.information}/>
+        )
+    }
+</div>

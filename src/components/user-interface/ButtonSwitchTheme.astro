@@ -5,7 +5,11 @@ interface Props {
 const { pageTitle } = Astro.props;
 const themeIconPath: string = pageTitle === 'Inicio' ? "../public/theme-icon.svg" : "../../public/theme-icon.svg";
 ---
-
-<button class="block my-4 mx-auto p-3 rounded-full bg-white">
-    <img class="w-6" src={themeIconPath} alt="Switch Theme">    
-</button>
+<div 
+    class="py-5
+        md:py-8"
+>
+    <button class="block mx-auto p-3 rounded-full bg-white">
+        <img class="w-6" src={themeIconPath} alt="Switch Theme">    
+    </button>
+</div>
