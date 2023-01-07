@@ -1,8 +1,8 @@
 ---
 import Layout from "../components/layout/Layout.astro";
 import ButtonSwitchTheme from "../components/user-interface/ButtonSwitchTheme.astro";
-import Profile from "../components/layout/Home/Profile.astro";
-import Portfolio from "../components/layout/Home/Portfolio.astro";
+import Profile from "../components/layout/Profile.astro";
+import Portfolio from "../components/layout/Portfolio";
 import Footer from "../components/user-interface/Footer.astro";
 
 const title: string = 'Inicio';
@@ -10,8 +10,8 @@ const description: string = 'Texto de borrador';
 ---
 
 <Layout title={title} description={description}>
-    <ButtonSwitchTheme pageTitle={title}/>
+    <ButtonSwitchTheme/>
     <Profile/>
-    <Portfolio/>
+    <Portfolio client:load/>
     <Footer/>
 </Layout>

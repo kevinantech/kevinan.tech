@@ -1,5 +1,5 @@
 ---
-import ProfileFact from "./ProfileFact.astro";
+import Fact from "./Fact.astro";
 const facts = [
     {
         quantity: 1,
@@ -22,7 +22,7 @@ const facts = [
 >
     {
         facts.map( fact => 
-            <ProfileFact quantity={fact.quantity} information={fact.information}/>
+            <Fact quantity={fact.quantity} information={fact.information}/>
         )
     }
 </div>

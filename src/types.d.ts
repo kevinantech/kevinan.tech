@@ -1,0 +1,1 @@
+type PortfolioStore = 'projects' | 'skills';
