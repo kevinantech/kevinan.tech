@@ -1,5 +1,4 @@
 ---
-import '../../../styles.css';
 interface Props {
     quantity: number | string;
     information: string;
@@ -16,7 +15,7 @@ const { quantity, information } = Astro.props;
     </p>
     <p 
         class="text-base font-medium text-neutral-700
-        text-secondary"
+        md:text-[22px]"
     >
         {information}
     </p>
