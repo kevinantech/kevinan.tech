@@ -1,4 +1,3 @@
-import Project from "./Project";
 const Projects = () => {
     return (
         <div
@@ -6,7 +5,7 @@ const Projects = () => {
                 sm:grid-cols-2 sm:gap-x-7
                 md:gap-x-8 md:gap-y-12"
         >
-            <Project/>
+            Proyectos
         </div>
     )
 }

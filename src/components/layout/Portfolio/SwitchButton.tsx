@@ -7,7 +7,8 @@ const PortfolioSwitchButton = () => {
     const handleSkills = () => { portfolioStore.set(PortoflioStoreValues.skills) }
 
     //TODO: Add dark theme background
-    const ButtonActiveStyle: string = "bg-neutral-300";
+    const ButtonActiveStyle: string = "bg-[#D7D7D7]";
+    
     return (
         <div 
             className="flex p-2 rounded-2xl bg-white mb-10
@@ -15,14 +16,14 @@ const PortfolioSwitchButton = () => {
         >
             
             <button 
-                className={`flex-1 py-4 rounded-xl text-base font-medium text-neutral-900 
+                className={`flex-1 py-4 rounded-xl text-base font-medium text-[#19191B] 
                 md:py-6 md:text-xl
                 ${store === PortoflioStoreValues.projects ? ButtonActiveStyle : ''}`}
                 onClick={() => handleProjects()}
             >Proyectos</button>
 
             <button 
-                className={`flex-1 py-4 rounded-xl text-base font-medium text-neutral-900 
+                className={`flex-1 py-4 rounded-xl text-base font-medium text-[#19191B] 
                 md:py-6 md:text-xl
                 ${store === PortoflioStoreValues.skills ? ButtonActiveStyle : ''}`}
                 onClick={() => handleSkills()}
