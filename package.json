@@ -10,8 +10,20 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/react": "^2.1.1",
-    "@astrojs/tailwind": "^3.1.1",
-    "astro": "^2.1.9"
+    "@astrojs/preact": "^2.1.0",
+    "@astrojs/tailwind": "3.1.1",
+    "@nanostores/preact": "0.3.1",
+    "astro": "2.1.9",
+    "nanostores": "0.7.4",
+    "preact": "10.6.5"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "eslint": "^8.37.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "prettier": "^2.8.7"
   }
 }
