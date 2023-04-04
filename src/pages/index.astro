@@ -1,19 +1,19 @@
 ---
-import { Tabs } from "@components";
+import Header from "src/components/layouts/Header/Header.astro";
 ---
 
-<style>
-</style>
-
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 		<meta name="generator" content={Astro.generator} />
 		<title>Kevinantech</title>
 	</head>
-	<body>
-		<Tabs client:load />
+	<body class="font-['Fira_Code'] min-h-screen">
+		<Header/>
 	</body>
 </html>
