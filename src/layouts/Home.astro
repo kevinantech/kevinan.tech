@@ -2,6 +2,24 @@
 import HomeLink from "src/components/HomeLink.astro";
 ---
 
+<style>
+  h2 {
+    position: relative;
+    animation: 1750ms 1 normal ease-out first-time ;
+  }
+
+  @keyframes first-time {
+    0% {
+      opacity: 0;
+      top: -100%;
+    }
+    100% {
+      opacity: 1;
+      top: 0;
+    }
+  }
+</style>
+
 <!-- Next line: Col 59, (114x) Refers to sum of header height and home y-margins -->
 <div class="flex flex-col justify-evenly text-white md:h-[calc(100vh-114px)] md:max-h-[768px] md:my-5">
   <h2 class="primary-font font-bold lg:max-w-[66.7%] lg:mt-4 lg:text-5xl lg:leading-snug">

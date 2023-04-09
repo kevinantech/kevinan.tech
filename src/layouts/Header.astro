@@ -2,6 +2,16 @@
 import NavLink from "src/components/NavLink.astro";
 ---
 
+<style>
+  header {
+    animation: 875ms 1 normal ease-in first-time ;
+  }
+
+  @keyframes first-time {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+</style>
 
 <header class="flex items-center primary-font md:py-5 text-white">
   <h1 class="font-medium lg:text-2xl">Kevinantech</h1>
