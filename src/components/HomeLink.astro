@@ -1,0 +1,16 @@
+---
+interface Props {
+  href: string;
+  title: string;
+}
+
+const { href, title } = Astro.props;
+---
+
+<style>
+  a { transition: padding 300ms ease-in-out; }
+</style>
+
+<a {...{href}} target="_blank" class="inline-block border border-white rounded lg:py-2 lg:px-5 lg:hover:px-10">
+  {title}
+</a>

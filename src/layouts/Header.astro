@@ -1,18 +1,15 @@
 ---
-
+import NavLink from "src/components/NavLink.astro";
 ---
-<style>
-  nav a {
-    transition: border 150ms ease-in-out;
-  }
-</style>
+
 
 <header class="flex items-center primary-font md:py-5 text-white">
-  <h1 class="font-medium lg:text-xl">Kevinantech</h1>
-  <nav class="flex text-sm lg:flex-1 lg:justify-end lg:gap-16 xl:gap-20 xl:text-base">
-    <a href="#about" class="md:p-1 lg:border-transparent lg:border-y lg:hover:border-b-white">About</a>
-    <a href="#projects" class="md:p-1 lg:border-transparent lg:border-y lg:hover:border-b-white">Projects</a>
-    <a href="#skills" class="md:p-1 lg:border-transparent lg:border-y lg:hover:border-b-white">Skills</a>
-    <a href="#contact" class="md:p-1 lg:border-transparent lg:border-y lg:hover:border-b-white">Contact</a>
+  <h1 class="font-medium lg:text-2xl">Kevinantech</h1>
+  <nav class="flex text-sm lg:flex-1 lg:justify-end lg:gap-12 xl:gap-16 xl:text-base">
+    <NavLink title="Home" href="#home"/>
+    <NavLink title="About" href="#about"/>
+    <NavLink title="Projects" href="#projects"/>
+    <NavLink title="Skills" href="#skills"/>
+    <NavLink title="Contact" href="#contact"/>
   </nav>
 </header>

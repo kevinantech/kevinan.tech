@@ -1,0 +1,16 @@
+---
+import HomeLink from "src/components/HomeLink.astro";
+---
+
+<!-- Next line: Col 59, (114x) Refers to sum of header height and home y-margins -->
+<div class="flex flex-col justify-evenly text-white md:h-[calc(100vh-114px)] md:max-h-[768px] md:my-5">
+  <h2 class="primary-font font-bold lg:max-w-[66.7%] lg:mt-4 lg:text-5xl lg:leading-snug">
+    Tailored apps meeting
+    <span class="text-[#ec368d]">business needs</span>
+    and internal processes
+  </h2>
+  <div class="secondary-font w-max lg:mb-8 lg:text-lg">
+    <HomeLink title="DOWNLOAD RESUME" href="#" />
+    <HomeLink title="VIEW PROJECTS" href="#" />
+  </div>
+</div>

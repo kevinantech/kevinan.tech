@@ -1,0 +1,17 @@
+---
+interface Props {
+  id?: string;
+  href: string;
+  title: string;
+}
+
+const { id, href, title } = Astro.props;
+---
+
+<style>
+  a { transition: border 150ms ease-in-out; }
+</style>
+
+<a {...{id, href}} class="md:p-1 lg:border-transparent lg:border-y lg:hover:border-b-white">
+  {title}
+</a>
