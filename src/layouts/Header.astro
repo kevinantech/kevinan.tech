@@ -4,11 +4,12 @@ import NavLink from "src/components/NavLink.astro";
 
 <style>
   header {
-    animation: 875ms 1 normal ease-in first-time ;
+    animation: 1500ms normal ease-out slidein-header ;
   }
 
-  @keyframes first-time {
+  @keyframes slidein-header {
     0% { opacity: 0; }
+    80% { opacity: 0; }
     100% { opacity: 1; }
   }
 </style>
